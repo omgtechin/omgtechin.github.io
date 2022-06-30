@@ -2,7 +2,7 @@
     <html>
     <head>
         <meta charset="UTF-8">
-        <title></title>
+        <title>Question 1</title>
         <style>
 /* From extension vscode.github */
 /*---------------------------------------------------------------------------------------------
@@ -740,7 +740,7 @@ hue-6-2: #e6c07b
 }
 
 </style>
-
+        
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Microsoft/vscode/extensions/markdown-language-features/media/markdown.css">
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Microsoft/vscode/extensions/markdown-language-features/media/highlight.css">
 <style>
@@ -753,10 +753,10 @@ hue-6-2: #e6c07b
         <style>
 .task-list-item { list-style-type: none; } .task-list-item-checkbox { margin-left: -20px; vertical-align: middle; }
 </style>
-
+        
     </head>
     <body class="vscode-body vscode-light">
-        <h2>##Question 1</h2>
+        <h2 id="question-1">Question 1</h2>
 <p>Given a string s consisting of words and spaces, return the length of the last word in the string.</p>
 <p>A word is a maximal substring consisting of non-space characters only.</p>
 <p>Example 1:</p>
@@ -780,8 +780,178 @@ Explanation: The last word is &quot;joyboy&quot; with length 6.
 <li>s consists of only English letters and spaces ' '.</li>
 <li>There will be at least one word in s.</li>
 </ul>
+<h2 id="question-2">Question 2</h2>
+<p>You are climbing a staircase. It takes n steps to reach the top.</p>
+<p>Each time you can either climb 1 or 2 steps. In how many distinct ways can you climb to the top?</p>
+<p>Example 1:</p>
+<pre><code><code><div>Input: n = 2
+Output: 2
+Explanation: There are two ways to climb to the top.
+1. 1 step + 1 step
+2. 2 steps
+</div></code></code></pre>
+<p>Example 2:</p>
+<pre><code><code><div>Input: n = 3
+Output: 3
+Explanation: There are three ways to climb to the top.
+1. 1 step + 1 step + 1 step
+2. 1 step + 2 steps
+3. 2 steps + 1 step
+</div></code></code></pre>
+<p>Constraints:
+1 &lt;= n &lt;= 45</p>
+<h2 id="question-3">Question 3</h2>
+<p>A phrase is a palindrome if, after converting all uppercase letters into lowercase letters and removing all non-alphanumeric characters, it reads the same forward and backward. Alphanumeric characters include letters and numbers.</p>
+<p>Given a string s, return true if it is a palindrome, or false otherwise.</p>
+<p>Example 1:</p>
+<pre><code><code><div>Input: s = &quot;A man, a plan, a canal: Panama&quot;
+Output: true
+Explanation: &quot;amanaplanacanalpanama&quot; is a palindrome.
+</div></code></code></pre>
+<p>Example 2:</p>
+<pre><code><code><div>Input: s = &quot;race a car&quot;
+Output: false
+Explanation: &quot;raceacar&quot; is not a palindrome.
+</div></code></code></pre>
+<p>Example 3:</p>
+<pre><code><code><div>Input: s = &quot; &quot;
+Output: true
+Explanation: s is an empty string &quot;&quot; after removing non-alphanumeric characters.
+Since an empty string reads the same forward and backward, it is a palindrome.
+</div></code></code></pre>
+<p>Constraints:
+1 &lt;= s.length &lt;= 2 * 105
+s consists only of printable ASCII characters.</p>
+<h2 id="question-4">Question 4</h2>
+<p>Given an array nums of size n, return the majority element.</p>
+<p>The majority element is the element that appears more than ⌊n / 2⌋ times. You may assume that the majority element always exists in the array.</p>
+<p>Example 1:</p>
+<pre><code><code><div>Input: nums = [3,2,3]
+Output: 3
+</div></code></code></pre>
+<p>Example 2:</p>
+<pre><code><code><div>Input: nums = [2,2,1,1,1,2,2]
+Output: 2
+</div></code></code></pre>
+<p>Constraints:</p>
+<p>n == nums.length
+1 &lt;= n &lt;= 5 * 104
+-109 &lt;= nums[i] &lt;= 109</p>
+<p>##Question 5</p>
+<p>You may assume that a valid phone number must appear in one of the following two formats: (xxx) xxx-xxxx or xxx-xxx-xxxx. (x means a digit)</p>
+<p>You may also assume each line in the text file must not contain leading or trailing white spaces.</p>
+<p>Example:</p>
+<p>Assume that file.txt has the following content:</p>
+<pre><code><code><div>987-123-4567
+123 456 7890
+(123) 456-7890
+</div></code></code></pre>
+<p>Your script should output the following valid phone numbers:</p>
+<pre><code><code><div>987-123-4567
+(123) 456-7890
+</div></code></code></pre>
+<h2 id="question-6">Question 6</h2>
+<p>Given an integer n, return true if it is a power of two. Otherwise, return false.</p>
+<p>An integer n is a power of two, if there exists an integer x such that n == 2x.</p>
+<p>Example 1:</p>
+<pre><code><code><div>Input: n = 1
+Output: true
+Explanation: 20 = 1
+</div></code></code></pre>
+<p>Example 2:</p>
+<pre><code><code><div>Input: n = 16
+Output: true
+Explanation: 24 = 16
+</div></code></code></pre>
+<p>Example 3:</p>
+<pre><code><code><div>Input: n = 3
+Output: false
+</div></code></code></pre>
+<p>Constraints:
+-231 &lt;= n &lt;= 231 - 1</p>
+<h2 id="question-7">Question 7</h2>
+<p>Given an integer num, repeatedly add all its digits until the result has only one digit, and return it.</p>
+<p>Example 1:</p>
+<pre><code><code><div>Input: num = 38
+Output: 2
+Explanation: The process is
+38 --&gt; 3 + 8 --&gt; 11
+11 --&gt; 1 + 1 --&gt; 2
+Since 2 has only one digit, return it.
+</div></code></code></pre>
+<p>Example 2:</p>
+<pre><code><code><div>Input: num = 0
+Output: 0
+</div></code></code></pre>
+<p>Constraints:
+0 &lt;= num &lt;= 231 - 1</p>
+<h2 id="question-8">Question 8</h2>
+<p>Given a string s which consists of lowercase or uppercase letters, return the length of the longest palindrome that can be built with those letters.</p>
+<p>Letters are case sensitive, for example, &quot;Aa&quot; is not considered a palindrome here.</p>
+<p>Example 1:</p>
+<pre><code><code><div>Input: s = &quot;abccccdd&quot;
+Output: 7
+Explanation: One longest palindrome that can be built is &quot;dccaccd&quot;, whose length is 7.
+</div></code></code></pre>
+<p>Example 2:</p>
+<pre><code><code><div>Input: s = &quot;a&quot;
+Output: 1
+Explanation: The longest palindrome that can be built is &quot;a&quot;, whose length is 1.
+</div></code></code></pre>
+<p>Constraints:</p>
+<ul>
+<li>1 &lt;= s.length &lt;= 2000</li>
+<li>s consists of lowercase and/or uppercase English letters only.</li>
+</ul>
+<h2 id="question-9">Question 9</h2>
+<p>Given a string s and a character letter, return the percentage of characters in s that equal letter rounded down to the nearest whole percent.</p>
+<p>Example 1:</p>
+<pre><code><code><div>Input: s = &quot;foobar&quot;, letter = &quot;o&quot;
+Output: 33
+Explanation:
+The percentage of characters in s that equal the letter 'o' is 2 / 6 * 100% = 33% when rounded down, so we return 33.
+</div></code></code></pre>
+<p>Example 2:</p>
+<pre><code><code><div>Input: s = &quot;jjjj&quot;, letter = &quot;k&quot;
+Output: 0
+Explanation:
+The percentage of characters in s that equal the letter 'k' is 0%, so we return 0.
+</div></code></code></pre>
+<p>Constraints:</p>
+<ul>
+<li>1 &lt;= s.length &lt;= 100</li>
+<li>s consists of lowercase English letters.</li>
+<li>letter is a lowercase English letter.</li>
+</ul>
+<h2 id="question-10">Question 10</h2>
+<p>You are given an array of integers nums. You are also given an integer original which is the first number that needs to be searched for in nums.</p>
+<p>You then do the following steps:</p>
+<p>If original is found in nums, multiply it by two (i.e., set original = 2 * original).
+Otherwise, stop the process.
+Repeat this process with the new number as long as you keep finding the number.
+Return the final value of original.</p>
+<p>Example 1:</p>
+<pre><code><code><div>Input: nums = [5,3,6,1,12], original = 3
+Output: 24
+Explanation:
+- 3 is found in nums. 3 is multiplied by 2 to obtain 6.
+- 6 is found in nums. 6 is multiplied by 2 to obtain 12.
+- 12 is found in nums. 12 is multiplied by 2 to obtain 24.
+- 24 is not found in nums. Thus, 24 is returned.
+</div></code></code></pre>
+<p>Example 2:</p>
+<pre><code><code><div>Input: nums = [2,7,9], original = 4
+Output: 4
+Explanation:
+- 4 is not found in nums. Thus, 4 is returned.
+</div></code></code></pre>
+<p>Constraints:</p>
+<ul>
+<li>1 &lt;= nums.length &lt;= 1000</li>
+<li>1 &lt;= nums[i], original &lt;= 1000</li>
+</ul>
 
-
-
+        
+        
     </body>
     </html>
